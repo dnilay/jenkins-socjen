@@ -26,4 +26,9 @@ public class BeerServiceImpl implements BeerService{
     public List<Beer> displayAllBeer() {
         return beerDao.displayAllBeer();
     }
+
+    @Override
+    public Beer getBeerById(Integer beerId) {
+        return beerDao.getBeerById(beerId);
+    }
 }

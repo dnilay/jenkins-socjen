@@ -7,5 +7,6 @@ import java.util.List;
 public interface BeerDao {
     public Beer createBeer(Beer beer);
     public List<Beer> displayAllBeer();
+    public Beer getBeerById(Integer beerId);
 
 }

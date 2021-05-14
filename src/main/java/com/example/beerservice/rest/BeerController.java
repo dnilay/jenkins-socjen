@@ -30,4 +30,10 @@ public class BeerController {
     {
         return ResponseEntity.ok(beerService.displayAllBeer());
     }
+    @GetMapping("/{beerid}")
+    public ResponseEntity<Beer> getBeerById(@PathVariable("beerId") Integer beerId)
+    {
+        return ResponseEntity.ok(beerService.getBeerById(beerId));
+    }
+
 }

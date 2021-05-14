@@ -33,4 +33,9 @@ public class BeerDaoImpl implements BeerDao{
         Query query=entityManager.createQuery("SELECT B FROM Beer B");
         return query.getResultList();
     }
+
+    @Override
+    public Beer getBeerById(Integer beerId) {
+        return entityManager.find(Beer.class,beerId);
+    }
 }
